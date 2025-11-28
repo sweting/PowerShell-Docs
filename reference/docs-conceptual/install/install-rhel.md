@@ -40,7 +40,9 @@ if [ ${VERSION_ID%.*} -lt 8 ]
 then majorver=7
 elif [ ${VERSION_ID%.*} -lt 9 ]
 then majorver=8
-else majorver=9
+elif [ ${VERSION_ID%.*} -lt 10 ]
+then majorver=9
+else majorver=10
 fi
 
 # Download the Microsoft RedHat repository package
